@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fondo claro */
+  }
+
+  .app-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .nav-wrapper {
+    background-color: #ffffff; /* Azul elegante */
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+
+  .brand-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+  }

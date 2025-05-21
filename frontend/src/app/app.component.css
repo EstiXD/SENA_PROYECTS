@@ -1,0 +1,36 @@
+.nav-wrapper {
+    background-color: #1565c0; /* Azul elegante para la barra de navegación */
+    box-shadow: 0px 4px 10px rgb(156, 171, 179); /* Sombra sutil para profundidad */
+  }
+  
+  .nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Altura de la barra de navegación */
+  }
+  
+  .brand-title {
+    font-size: 1.8rem; /* Texto más grande y destacado */
+    font-weight: bold;
+    color: #ffffff; /* Texto blanco para un buen contraste */
+    text-align: center;
+    background-color: #1e88e5; /* Azul más claro detrás del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados para un estilo moderno */
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: #ffffff; /* Azul pastel claro */
+    border-radius: 8px; /* Bordes redondeados para un contenedor limpio */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  }
+  
+  .containerapp{
+    padding: 20px;
+    background-color: #ffffff; /* Azul pastel claro */
+    border-radius: 8px; /* Bordes redondeados para un contenedor limpio */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  }
+  

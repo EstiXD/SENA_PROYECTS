@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="empleados.component.css">
+
+<div class="main-container">
+  <div class="form-card">
+    <form #empleadoForm="ngForm" (ngSubmit)="agregarEmpleado(empleadoForm)">
+      <div class="input-field">
+        <input type="text" name="name" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.name" placeholder="Ingrese su nombre" required>
+      </div>
+      <div class="input-field">
+        <input type="text" name="position" #position="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.position" placeholder="Ingrese su cargo" required>
+      </div>
+      <div class="input-field">
+        <input type="text" name="office" #office="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.office" placeholder="Ingrese su lugar de trabajo" required>
+      </div>
+      <div class="input-field">
+        <input type="text" name="salary" #salary="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.salary" placeholder="Ingrese su salario" required>
+      </div>
+
+      <div class="button-group">
+        <button class="btn teal lighten-1" type="button" (click)="resetForm(empleadoForm)">Limpiar</button>
+        <button class="btn teal darken-2" type="submit">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>

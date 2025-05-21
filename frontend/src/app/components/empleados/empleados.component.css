@@ -1,0 +1,136 @@
+/* Restablecimiento general para consistencia */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh; /* Altura completa de la ventana gráfica para un mejor centrado */
+    background-color: #f4f7fa; /* Fondo más suave y moderno */
+    padding: 20px; /* Relleno adaptable para pantallas más pequeñas */
+  }
+  
+  /* Tarjeta del formulario */
+  .form-card {
+    background-color: #ffffff;
+    border-radius: 16px; /* Radio ligeramente mayor para una apariencia moderna */
+    box-shadow: 8px 8px 34px rgba(0, 85, 255, 0.711); /* Sombra más profunda para dar profundidad */
+    padding: 40px; /* Relleno más espacioso */
+    width: 100%;
+    max-width: 500px; /* Ligeramente más ancho para una mejor disposición del formulario */
+    margin: 20px; /* Margen para pantallas más pequeñas */
+    transition: transform 0.3s ease; /* Escalado suave al pasar el ratón */
+  }
+  
+  .form-card:hover {
+    transform: translateY(-5px); /* Ligero efecto de elevación al pasar el ratón */
+  }
+  
+  /* Contenedor del campo de entrada */
+  .input-field {
+    margin-bottom: 20px; /* Espaciado consistente entre las entradas */
+  }
+  
+  /* Estilo de la entrada */
+  .input-field input {
+    width: 100%;
+    padding: 14px 16px; /* Relleno más cómodo */
+    margin-top: 8px;
+    border: 1px solid #d1d9e6; /* Color de borde más suave */
+    border-radius: 10px; /* Bordes redondeados */
+    outline: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif; /* Fuente moderna y limpia */
+    background-color: #fafafa; /* Fondo sutil para las entradas */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .input-field input:focus {
+    border-color: #1e88e5; /* Azul vibrante para el foco */
+    box-shadow: 0 1 30px rgba(30, 136, 229, 0.2); /* Brillo más suave */
+    background-color: #ffffff; /* Fondo blanco al enfocar */
+  }
+  
+  /* Estilo del marcador de posición */
+  .input-field input::placeholder {
+    color: #90a4ae; /* Color de marcador de posición apagado */
+    font-weight: 400;
+  }
+  
+  /* Estilo de entrada inválida (para validación de Angular) */
+  .input-field input.ng-invalid.ng-touched {
+    border-color: #e57373; /* Borde rojo para entradas inválidas */
+    box-shadow: 0 0 8px rgba(229, 115, 115, 0.2);
+  }
+  
+  /* Grupo de botones */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px; /* Mejor espaciado entre botones */
+    margin-top: 30px;
+  }
+  
+  /* Estilo de los botones */
+  .button-group .btn {
+    width: 100%; /* Botones de igual ancho */
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Botón primario (Guardar) */
+  .button-group .btn.teal.darken-2 {
+    background-color: #1e88e5; /* Azul vibrante */
+    color: #ffffff;
+  }
+  
+  .button-group .btn.teal.darken-2:hover {
+    background-color: #1565c0; /* Azul más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Ligera elevación */
+  }
+  
+  /* Botón secundario (Limpiar) */
+  .button-group .btn.teal.lighten-1 {
+    background-color: #e0e0e0; /* Gris neutro para acción secundaria */
+    color: #37474f;
+  }
+  
+  .button-group .btn.teal.lighten-1:hover {
+    background-color: #bdbdbd; /* Gris ligeramente más oscuro al pasar el ratón */
+    transform: translateY(-2px);
+  }
+  
+  /* Estado de botón deshabilitado */
+  .button-group .btn:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Diseño adaptable */
+  @media (max-width: 600px) {
+    .form-card {
+      padding: 24px;
+      margin: 10px;
+    }
+  
+    .button-group {
+      flex-direction: column; /* Apilar botones en pantallas pequeñas */
+      gap: 12px;
+    }
+  
+    .button-group .btn {
+      width: 100%;
+    }
+  }
